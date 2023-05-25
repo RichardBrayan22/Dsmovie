@@ -7,3 +7,9 @@
 .nav-logo-text, .nav-logo-text:hover{
     color: #000;
 }
+
+.nav-button-logout{
+    width: 100px;
+    background-color: transparent;
+    border-radius: 10px;
+}
