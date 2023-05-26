@@ -1,0 +1,25 @@
+
+.review-user{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.review-user h1{
+   margin-left: 15px;
+   font-size: 16px;
+   letter-spacing: -0.015em;
+}
+
+.avaliation {
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.avaliation h3 {
+    color: #9E9E9E;
+    font-size: 14px;
+    letter-spacing: -0.015em;
+    text-align: justify;
+}

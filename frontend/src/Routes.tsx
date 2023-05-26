@@ -4,6 +4,7 @@ import PrivateRoute from './components/PrivateRoute';
 import Home from './pages/Home';
 import MovieCatalog from './pages/Private/MovieCatalog';
 import history from './util/history';
+import MovieDetails from './pages/Private/MovieDetails';
 
 const Routes = () => {
   return (
@@ -13,9 +14,12 @@ const Routes = () => {
         <Route path="/" exact>
           <Home />
         </Route>
-        <PrivateRoute path='/movies'>
+        <PrivateRoute path="/movies">
           <Route path="/movies" exact>
             <MovieCatalog />
+          </Route>
+          <Route path="/movies/:movieId">
+            <MovieDetails />
           </Route>
         </PrivateRoute>
       </Switch>
@@ -23,4 +27,4 @@ const Routes = () => {
   );
 };
 
-export default Routes
+export default Routes;
