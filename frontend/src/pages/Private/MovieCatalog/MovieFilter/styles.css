@@ -1,0 +1,40 @@
+.movie-filter-container{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+.genre-filter-select__control{
+    border-radius: 4px !important;
+    font-size: 1em;
+    letter-spacing: -0.015em;
+    color: #fff;
+    border: 1px solid #E1E1E1 !important;
+    background-color: unset !important;
+}
+
+
+.genre-filter-select__placeholder{
+   color: rgba(255, 255, 255, 0.5) !important;
+   font-size: 16px;
+}
+.genre-filter-select__input{
+   width: 100% !important;
+}
+
+.genre-filter-select__indicator-separator{
+    display: none;
+}
+
+.genre-filter-select__indicator{
+    color: #9e9e9e !important;
+}
+
+.genre-filter-select__single-value{
+    color: #FFF !important;
+}
+
+@media(min-width:576px){
+    .movie-filter-genre-container{
+        width: 260px;
+    }
+}
