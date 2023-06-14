@@ -5,6 +5,7 @@ import Button from '../Button';
 import './styles.css';
 import { requestBackend } from '../../util/requests';
 import { Review } from '../../types/review';
+import { toast } from 'react-toastify';
 
 type FormData = {
   movieId: number;
@@ -38,9 +39,15 @@ const ReviewForm = ({ movieId, onInsertReview }: Props) => {
       .then((response) => {
         setValue('text', '');
         onInsertReview(response.data);
+        toast.success('Avaliação enviada com sucesso', {
+          theme: 'colored',
+        });
       })
       .catch((error) => {
         console.log(error);
+        toast.error('Erro ao enviar avaliação', {
+          theme: 'colored',
+        });
       });
   };
 
@@ -52,12 +59,18 @@ const ReviewForm = ({ movieId, onInsertReview }: Props) => {
             required: 'Campo Obrigatorio',
           })}
           type="text"
-          className={`form-control base-input ${errors.text ? 'is-invalid ' : ''}`}
+          className={`form-control base-input ${
+            errors.text ? 'is-invalid ' : ''
+          }`}
           placeholder="Deixe sua avaliação aqui"
           name="text"
         />
 
-        <Button text="Salvar Avaliação" />
+        <div className="btn-container-review">
+          <div className="center-btn">
+            <Button text="Salvar Avaliação" />
+          </div>
+        </div>
       </form>
     </div>
   );
