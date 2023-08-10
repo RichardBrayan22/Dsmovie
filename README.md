@@ -13,9 +13,9 @@ A aplicação consiste em uma Lista de filmes, com opção de filtro por Gênero
 ## Layout web
 ![Web 1](https://github.com/RichardBrayan22/assets/blob/main/DsMovie/Web.png)
 
-![Web 2](https://github.com/RichardBrayan22/assets/blob/main/DsMovie/Web2.png)
+![Web 2](https://github.com/RichardBrayan22/assets/blob/main/DsMovie/Web1.png)
 
-![Web 2](https://github.com/RichardBrayan22/assets/blob/main/DsMovie/Web3.png)
+![Web 3](https://github.com/RichardBrayan22/assets/blob/main/DsMovie/Web2.png)
 
 # Tecnologias utilizadas
 ## Back end
