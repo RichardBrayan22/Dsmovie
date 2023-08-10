@@ -61,6 +61,18 @@ yarn install
 yarn start
 ```
 
+## Usuario para login
+
+### Visitante
+
+- Login: ana@gmail.com
+- Senha: 123456
+
+### Membro
+
+- Login: bob@gmail.com
+- Senha: 123456
+
 # Autor
 
 Richard Brayan Mariotto Floresto
